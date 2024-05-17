@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- when modal open the body color change into transparent black -->
+    <div class="bodyofmodal">  
+        
+        <!-- main modal area        -->
+        <div class="modal">
+            <h3>Welcome to Birthday Calender</h3>
+            <p class="none" id="ristrict">*Please write your birth date in following columns</p>
+
+            <!-- input area -->
+            <div class="inputarea">
+                <!-- day area -->
+                <div class="day">
+                    <div class="">Write Day Here</div>
+                    <input class="inputinput" placeholder="Day" id="dayi" value="17" type="number" min="1" max="31">
+                 </div>
+
+                <!-- month area -->
+                <div class="month">
+                    <div class="">Write Month Here</div>
+                    <input class="inputinput" placeholder="Month in number" value="7" id="monthi"  type="number" min="1" max="12">
+                </div>
+                
+                <!-- year area -->
+                <div class="year">
+                    <div class="">Write Year Here</div>
+                    <input class="inputinput" placeholder="Year" id="yeari" value="2008"  type="number" min="1940">
+                </div>
+
+            </div>
+
+            <div class="button">
+                <input id="button" type="button" value="Submit">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- main body -->
+    <div class="bodyreal">
+        <div class="img"><img width="400px" src="https://marketplace.canva.com/EAEyuMaeoOE/1/0/1600w/canva-happy-birthday-instagram-post-mFmsycgF9eM.jpg"></div>
+        <div class="mainwork">
+            <div class="youwillbe">You will be 15 on 17/july/2023</div>
+            <div class="loremarea" style="text-align: center;">You need to wait for</div>
+            <div class="counter">
+                <!-- <div class="daysincount"><div class="countingoffdays fontweightbold">09</div>MONTHS</div> -->
+                <div class="daysincount"><div id="day" class="countingoffdays fontweightbold">32</div>DAYS</div>
+                <div class="daysincount"><div id="hour" class="countingoffdays fontweightbold">04</div>HOURS</div>
+                <div class="daysincount"><div id="minutes" class="countingoffdays fontweightbold">04</div>MINUTES</div>
+                <div class="daysincount"><div id="seconds" class="countingoffdays fontweightbold">55</div>SECONDS</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
